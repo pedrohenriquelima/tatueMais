@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7MO-zy-3b0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tattoer Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="TattoerController" customModule="tatueMais" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-dN-oLL">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RbG-5W-DuR">
+                                <rect key="frame" x="0.0" y="76" width="375" height="824"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tattooerCell" rowHeight="68" id="hC9-s6-elM" customClass="TattooerTableViewCell" customModule="tatueMais" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hC9-s6-elM" id="Tsy-g1-wmz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="67.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-OE-y6t">
+                                                    <rect key="frame" x="15" y="5" width="345" height="57.5"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1b0-e8-mM5">
+                                                            <rect key="frame" x="0.0" y="-2" width="60" height="60"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="60" id="4lN-LS-65f"/>
+                                                                <constraint firstAttribute="height" constant="60" id="US6-Zc-QDi"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsa-UB-NWa">
+                                                            <rect key="frame" x="68" y="8" width="269" height="41.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91939641497461932" green="0.91939641497461932" blue="0.91939641497461932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="zsa-UB-NWa" secondAttribute="trailing" constant="8" id="OVq-OC-Fvp"/>
+                                                        <constraint firstItem="1b0-e8-mM5" firstAttribute="centerY" secondItem="GLg-OE-y6t" secondAttribute="centerY" id="Pcd-b9-tpY"/>
+                                                        <constraint firstItem="zsa-UB-NWa" firstAttribute="top" secondItem="GLg-OE-y6t" secondAttribute="top" constant="8" id="iRz-Pd-z88"/>
+                                                        <constraint firstItem="1b0-e8-mM5" firstAttribute="leading" secondItem="GLg-OE-y6t" secondAttribute="leading" id="uJ3-rR-wzP"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zsa-UB-NWa" secondAttribute="bottom" constant="8" id="uoj-aD-bl3"/>
+                                                        <constraint firstItem="zsa-UB-NWa" firstAttribute="leading" secondItem="1b0-e8-mM5" secondAttribute="trailing" constant="8" id="xjb-pZ-Ze8"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="GLg-OE-y6t" secondAttribute="trailing" constant="15" id="Lzy-SW-ufp"/>
+                                                <constraint firstItem="GLg-OE-y6t" firstAttribute="top" secondItem="Tsy-g1-wmz" secondAttribute="top" constant="5" id="M5E-a1-bCN"/>
+                                                <constraint firstItem="GLg-OE-y6t" firstAttribute="leading" secondItem="Tsy-g1-wmz" secondAttribute="leading" constant="15" id="YuY-G0-3Y4"/>
+                                                <constraint firstAttribute="bottom" secondItem="GLg-OE-y6t" secondAttribute="bottom" constant="5" id="wjE-1T-vmY"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="tattoerCellName" destination="zsa-UB-NWa" id="WEa-xa-4fv"/>
+                                            <outlet property="tattooerCell" destination="GLg-OE-y6t" id="35g-Fv-HFi"/>
+                                            <outlet property="tattooerCellImage" destination="1b0-e8-mM5" id="i5c-wf-iZM"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RoG-dN-oLL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2LL-FH-Dab"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2ax-V7-lc5"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5n9-eS-ZrB"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6ov-tF-cpd"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="top" secondItem="RoG-dN-oLL" secondAttribute="bottom" id="V6H-34-H21"/>
+                            <constraint firstItem="RoG-dN-oLL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yya-a9-qXJ"/>
+                            <constraint firstItem="RoG-dN-oLL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rY1-pb-8S9"/>
+                            <constraint firstItem="RoG-dN-oLL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="urK-Dy-9uH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8kh-m9-xbm"/>
+                    <size key="freeformSize" width="375" height="900"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1573.5999999999999" y="-199.70014992503749"/>
+        </scene>
+        <!--Tatto Perfil Controller-->
+        <scene sceneID="zJW-Hk-j64">
+            <objects>
+                <viewController id="eo1-MU-pyi" customClass="TattoPerfilController" customModule="tatueMais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ha4-gJ-BZc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="kjf-UE-4V4"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="tattoerListToPerfil" id="PA8-21-5kZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ke6-ch-ztB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2330" y="-95"/>
+        </scene>
+        <!--User Controller-->
+        <scene sceneID="kMQ-GG-QEG">
+            <objects>
+                <viewController id="YfG-Gx-LtF" customClass="UserController" customModule="tatueMais" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aQQ-a6-NZj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="pTU-Zu-BMK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5zO-YS-EkB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGl-zI-FYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="558"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nfH-GY-kfO">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7MO-zy-3b0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="epd-Oe-E5a">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rd1-8V-YrM" kind="relationship" relationship="viewControllers" id="qR8-2O-0w2"/>
+                        <segue destination="SAp-Jy-hIj" kind="relationship" relationship="viewControllers" id="LQN-02-An4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UNu-32-Fel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-452" y="191"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="avw-QN-Z8F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rd1-8V-YrM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="RZU-9q-Uy4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xWM-9m-8FI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YaV-PV-odI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NGc-Vu-soW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="704" y="-128.63568215892056"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="2CD-2c-VIX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SAp-Jy-hIj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6ky-VR-kEf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="laP-sg-7fz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YfG-Gx-LtF" kind="relationship" relationship="rootViewController" id="Pys-BZ-rP3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z1b-Tv-fDS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="703" y="526"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="PA8-21-5kZ"/>
+    </inferredMetricsTieBreakers>
+</document>
