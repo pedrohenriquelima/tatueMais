@@ -7,4 +7,6 @@ target 'tatueMais' do
 
   # Pods for tatueMais
 pod 'Firebase/Core'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 end

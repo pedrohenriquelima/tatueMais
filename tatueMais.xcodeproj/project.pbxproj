@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66A20CF74CD79AC422F2230A /* Pods_tatueMais.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4AD29A93B98350CB39B849 /* Pods_tatueMais.framework */; };
+		8123B17C20B0A14500E1A7F3 /* Tattooer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8123B17B20B0A14500E1A7F3 /* Tattooer.swift */; };
 		815DDFCF20A76C9900274F24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 815DDFCE20A76C9900274F24 /* GoogleService-Info.plist */; };
 		815DDFD320A7724C00274F24 /* TattooerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815DDFD220A7724C00274F24 /* TattooerTableViewCell.swift */; };
 		81BFFCCE20A7608100798964 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BFFCCD20A7608100798964 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		16008BCDA8C5F5EF1AE609E0 /* Pods-tatueMais.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tatueMais.release.xcconfig"; path = "Pods/Target Support Files/Pods-tatueMais/Pods-tatueMais.release.xcconfig"; sourceTree = "<group>"; };
 		1DABCF70AAAD29A4E2AFAA2A /* Pods-tatueMais.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tatueMais.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tatueMais/Pods-tatueMais.debug.xcconfig"; sourceTree = "<group>"; };
+		8123B17B20B0A14500E1A7F3 /* Tattooer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tattooer.swift; sourceTree = "<group>"; };
 		815DDFCE20A76C9900274F24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		815DDFD220A7724C00274F24 /* TattooerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooerTableViewCell.swift; sourceTree = "<group>"; };
 		81BFFCCA20A7608100798964 /* tatueMais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tatueMais.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				81BFFCE620A7659C00798964 /* UserController.swift */,
 				81BFFCE820A7660700798964 /* TattoPerfilController.swift */,
 				815DDFD220A7724C00274F24 /* TattooerTableViewCell.swift */,
+				8123B17B20B0A14500E1A7F3 /* Tattooer.swift */,
 			);
 			path = tatueMais;
 			sourceTree = "<group>";
@@ -215,12 +218,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-tatueMais/Pods-tatueMais-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +248,7 @@
 				81BFFCE920A7660700798964 /* TattoPerfilController.swift in Sources */,
 				81BFFCD620A7608100798964 /* tatueMais.xcdatamodeld in Sources */,
 				815DDFD320A7724C00274F24 /* TattooerTableViewCell.swift in Sources */,
+				8123B17C20B0A14500E1A7F3 /* Tattooer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

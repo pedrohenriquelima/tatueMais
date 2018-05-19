@@ -10,10 +10,20 @@ import UIKit
 
 class TattoPerfilController: UIViewController {
 
+    @IBOutlet weak var imgTattooerPhoto: UIImageView!
+    @IBOutlet weak var lblTattooerName: UILabel!
+    @IBOutlet weak var lblTattooerInstagram: UILabel!
+    @IBOutlet weak var txtViewDescription: UITextView!
+    
+    var tattooer: Tattooer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        lblTattooerName.text = tattooer?.name
+        lblTattooerInstagram.text = tattooer?.instagram
+        imgTattooerPhoto.image = tattooer?.photo
+        txtViewDescription.text = tattooer?.description
     }
 
     override func didReceiveMemoryWarning() {
