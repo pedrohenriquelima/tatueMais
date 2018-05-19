@@ -40,6 +40,7 @@ class TattoerController: UIViewController, UITableViewDelegate, UITableViewDataS
         cell.tattooerCell.layer.cornerRadius = cell.tattooerCell.frame.height / 2
         cell.tattoerCellName.text = tattooerList[indexPath.row].name
         cell.tattooerCellImage.image = UIImage(named: tattooerList[indexPath.row].photoName)
+        cell.tattooerCellImage.clipsToBounds = true
         cell.tattooerCellImage.layer.cornerRadius = cell.tattooerCellImage.frame.height / 2
         
         return cell
