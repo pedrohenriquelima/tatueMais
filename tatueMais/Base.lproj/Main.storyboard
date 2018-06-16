@@ -19,12 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-dN-oLL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RbG-5W-DuR">
-                                <rect key="frame" x="0.0" y="120" width="375" height="498"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tattooerCell" rowHeight="68" id="hC9-s6-elM" customClass="TattooerTableViewCell" customModule="tatueMais" customModuleProvider="target">
@@ -79,14 +75,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RoG-dN-oLL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2LL-FH-Dab"/>
-                            <constraint firstItem="RbG-5W-DuR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="2ax-V7-lc5"/>
-                            <constraint firstItem="RbG-5W-DuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5n9-eS-ZrB"/>
-                            <constraint firstItem="RbG-5W-DuR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6ov-tF-cpd"/>
-                            <constraint firstItem="RbG-5W-DuR" firstAttribute="top" secondItem="RoG-dN-oLL" secondAttribute="bottom" id="V6H-34-H21"/>
-                            <constraint firstItem="RoG-dN-oLL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Yya-a9-qXJ"/>
-                            <constraint firstItem="RoG-dN-oLL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rY1-pb-8S9"/>
-                            <constraint firstItem="RoG-dN-oLL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="urK-Dy-9uH"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2Ql-wW-KrJ"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KQW-Va-7Jr"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="e1K-fz-aFF"/>
+                            <constraint firstItem="RbG-5W-DuR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nBU-KQ-C2R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -98,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1574" y="-129"/>
+            <point key="canvasLocation" x="1573.5999999999999" y="-129.08545727136433"/>
         </scene>
         <!--Tatto Perfil Controller-->
         <scene sceneID="zJW-Hk-j64">
